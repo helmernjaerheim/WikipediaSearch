@@ -20,17 +20,17 @@ https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={search_wor
 * **action=query**: Allows us to get informaton about wikipedia articles.
 * **list=search**: States that we want a list of wikipedia articles.
 * **srsearch={search_word}** Searches for wikipedia articles related to search_word.
-* **rlimit={number_search_results}** Returns an amount of wikipedia articles equal to number_search_results.
-* **rprop=** States what information we want about each article. Now we only get title.
-* **rigin=&#42** This avoids the cross-domain issue when using the wikipedia API.
-* **ormat=json** Specifies that the result will be returned as a JSON object.
+* **srlimit={number_search_results}** Returns an amount of wikipedia articles equal to number_search_results.
+* **srprop=** States what information we want about each article. Now we only get title.
+* **prigin=\*** This avoids the cross-domain issue when using the wikipedia API.
+* **format=json** Specifies that the result will be returned as a JSON object.
 
 The second one is run for every title that is returned by the first call:
 https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=1&titles={title}&origin=*&format=json
 
-* **rop=extracts** Specifies that we want the intro text.
-* **xsentences=1** Specifies that we only want the first sentence of the intro text.
-* **itles={title}** Get the information from the wikipedia article with this title.
+* **prop=extracts** Specifies that we want the intro text.
+* **exsentences=1** Specifies that we only want the first sentence of the intro text.
+* **titles={title}** Get the information from the wikipedia article with this title.
 
 ### NOTE!
 
