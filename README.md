@@ -15,7 +15,7 @@ In Internet Explorer nothing works. Even the alignment fails.
 [The Wikipedia search API](https://www.mediawiki.org/wiki/API:Search) provides a good overview of search parameters to use. In this case two types of API calls are made.
 
 The first one returns a list of result titles based on a search word:
-https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={search_word}&srlimit={number_search_results}srprop=&origin=&ast&format=json
+https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={search_word}&srlimit={number_search_results}srprop=&origin=*&format=json
 
 * action=query: Allows us to get informaton about wikipedia articles.
 * list=search: States that we want a list of wikipedia articles.
@@ -26,7 +26,7 @@ https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={search_wor
 * format=json: Specifies that the result will be returned as a JSON object.
 
 The second one is run for every title that is returned by the first call:
-https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=1&titles={title}&origin=&ast&format=json
+https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=1&titles={title}&origin=*&format=json
 
 * prop=extracts: Specifies that we want the intro text.
 * exsentences=1: Specifies that we only want the first sentence of the intro text.
