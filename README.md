@@ -10,6 +10,6 @@ In Google Chrome the search function doesn't work.
 
 In Internet Explorer nothing works. Even the alignment fails. 
 
-###NOTE!
+### NOTE!
 
 Normally you would press enter when you want to search after typing in the search word, but for some reason the enter button has no effect. Hence, right now the END button is used as a substitute. 
