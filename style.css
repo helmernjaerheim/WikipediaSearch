@@ -1,0 +1,205 @@
+.white-text {
+	color: white;
+}
+
+.black-text-link {
+	color: black;
+}
+
+.black-text-link:hover {
+	color: black;
+}
+
+.white-text-link {
+	color: white;
+}
+
+.white-text-link:hover {
+	color: white;
+}
+
+.orange-line {
+	position: relative;
+	width: 15px;
+	border-style: solid;
+	border-color: rgba(255, 165, 0, 1);
+	border-width: 1px;
+}
+
+.list-item {
+	position: relative;
+	background-color: white;
+	width: 80%;
+	height: 130px; 
+}
+
+.active-bar {
+	position: relative;
+	background-color: white;
+	width: 10px;
+	height: 100%;
+}
+
+.list-title {
+	position: relative;
+	top: -130px;
+	left: 15px;
+	font-weight: bold;
+}
+
+.list-text {
+	position: relative;
+	top: -125px;
+	left: 15px;
+	width: 90%;
+}
+
+.list-item:hover {
+	cursor: pointer;
+}
+
+#background {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 200, 1);
+}
+
+#initial-page {
+	position: relative;
+	width: 200px;
+	height: 150px;
+}
+
+#random-article {
+	position: relative;
+	width: 200px;
+	height: 25px;
+	text-align: center;
+}
+
+#random-article:hover {
+	cursor: pointer;
+}
+
+#search-bar {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border-style: solid;
+	border-color: rgba(255, 165, 0, 1);
+	border-width: 4px;
+	border-radius: 40px;
+}
+
+#search-bar:hover {
+	cursor: pointer;
+}
+
+#line-on-search-bar {
+	transform: 
+		translateX(26px)
+		translateY(31px)
+		rotate(45deg);
+}
+
+#cross {
+	position: absolute;
+	left: 164px;
+	top: 7px;
+	width: 20px;
+	height: 20px;
+	z-index: 10;
+}
+
+#cross:hover {
+	cursor: pointer;
+}
+
+#cross-on-search-bar-line-1 {
+	border-color: transparent;
+	transform: 
+		translateX(0px)
+		translateY(30px)
+		rotate(45deg);
+}
+
+#cross-on-search-bar-line-2 {
+	border-color: transparent;
+	transform: 
+		translateX(0px)
+		translateY(-10px)
+		rotate(135deg);
+}
+
+#text-search {
+	position: relative;
+	top: 3px;
+	left: 8px;
+}
+
+#text-field {
+	display: none;
+	visibility: hidden;
+	background-color: rgba(0, 0, 200, 1);
+	border-width: 0px;
+	color: white; 
+}
+
+#explanation-text {
+	position: relative;
+	top: 20px;
+	width: 200px;
+	height: 25px;
+	text-align: center;
+}
+
+#wikipedia-list {
+	position: relative;
+	width: 70%;
+	list-style-type: none;
+}
+
+li {
+	padding-bottom: 10px;
+}
+
+@keyframes expand {
+	from {width: 40px; left: 80px;}
+	to {width: 200px; left: 0px;}
+}
+
+@keyframes contract {
+	from {width: 200px; left: 0px;}
+	to {width: 40px; left: 80px;}
+}
+
+@keyframes remove {
+	from {width: 15px; border-width: 1px;}
+	to {width: 0px; border-width: 0px;}
+}
+
+@keyframes add {
+	from {width: 0px; border-width: 0px;}
+	to {width: 15px; border-width: 1px;}
+}
+
+@keyframes moveFromBottomLeft {
+	from {transform: translateX(-73px) translateY(26px) rotate(45deg);}
+	to {transform: translateX(2px) translateY(10px) rotate(45deg);}
+}
+
+@keyframes moveToBottomLeft {
+	from {transform: translateX(2px) translateY(10px) rotate(45deg);}
+	to {transform: translateX(22px) translateY(26px) rotate(45deg);}
+}
+
+@keyframes moveFromTopLeft {
+	from {transform: translateX(-73px) translateY(-14px) rotate(135deg);}
+	to {transform: translateX(2px) translateY(8px) rotate(135deg);}
+}
+
+@keyframes moveToTopLeft {
+	from {transform: translateX(2px) translateY(8px) rotate(135deg);}
+	to {transform: translateX(22px) translateY(-14px) rotate(135deg);}
+}
